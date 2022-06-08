@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+}
+
+.flex-container > div {
+    background-color: white;
+    flex: 1 0 21%;
+    height: 100px;
+    border-style: dotted;
+    border-width: 1px;
+    border-color: black;
+}
