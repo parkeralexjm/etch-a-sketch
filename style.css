@@ -2,22 +2,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 50%;
+    margin: auto;
 }
 
 .flex-container > div {
     flex: 1 0 21%;
-    height: 100px;
     border-style: dotted;
     border-width: 1px;
     border-color: black;
+    width: 25%;
+    height: 0;
+    padding-bottom: 25%;
 }
+
 
 .black {
     background-color: black;
 }
 
-.white {
-    background-color: white;
-    border: 1px solid #d3d3d3
+.newButton {
+    margin: auto;
 }
