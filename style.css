@@ -1,12 +1,26 @@
 .title-container {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 #title {
     border: 2px solid black;
     padding: 1% 5%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;    
+    margin: 16px;
+
+}
+
+.newButton {
+    background-color: teal;
+    font-size: 24px;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 24px;
 }
 
 .flex-container {
@@ -32,8 +46,4 @@
     outline-style: solid;
     outline-width: 1px;
     outline-color: black;
-}
-
-.newButton {
-    margin: auto;
 }

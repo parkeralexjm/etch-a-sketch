@@ -7,12 +7,16 @@ const container = document.querySelector('#container');
 // New screen function taking parameter for the size of the grid
 function newScreen() {
     // Prompt the user for the size of the new grid
-    var size = window.prompt("How many pixels would you like your Etch-A-Sketch to have on the side?");
+    var size = window.prompt("How many pixels would you like your Etch-A-Sketch to have on the side? (max 100)");
     // Calculate the size of the width of each row
+    if (size > 100) {
+        alert("Etch-A-Sketch must be below 100 pixels wide");
+        return;
+    }
+    
     if (size == null){
         size = 16;
     } 
-    
     var pixelSize = 50/size + "rem";
     // Create an array
     let pixelArray = [];
@@ -59,6 +63,4 @@ var target = document.querySelectorAll('.pixel');
             this.className = 'black';
         })
     }
-
-    onload()
 }
