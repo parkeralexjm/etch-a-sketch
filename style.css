@@ -1,24 +1,30 @@
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    width: 50%;
+    width: 50rem;
+    height: 50rem;
     margin: auto;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: black;
 }
 
 .flex-container > div {
-    flex: 1 0 21%;
-    border-style: dotted;
-    border-width: 1px;
-    border-color: black;
-    width: 25%;
-    height: 0;
-    padding-bottom: 25%;
+    padding-bottom: 0px;
 }
 
+.pixel {
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+}
 
 .black {
     background-color: black;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
 }
 
 .newButton {
